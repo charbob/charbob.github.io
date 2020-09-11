@@ -1,25 +1,114 @@
-<!-- git - ('git' shows all commands)
-	add ('.' or '-A' adds all files)
-	push
-	pull
-	status
-	commit -m "message" (always add before commiting)
-	clone
-	esc+ ':wq' if commited before adding
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<!-- references a normalized css from the internet (vendor) -->
+		<link rel='stylesheet' type='text/css' href='vendors/normalize.css'>
+		<!-- this file allows for responsive grid spacing -->
+		<link rel='stylesheet' type='text/css' href='vendors/grid.css'>
+
+
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Teko&display=swap" rel="stylesheet">
+		<title>Farewell Earth: Page Two</title>
+
+	</head>
+	
+	<body>
+		<header>
+			<!-- header container is like a div, tells google that it has meaning -->
+			<nav>
+				<div class='row'>
+					<img src='resources/img/logo-white.png' alt='Omnifood Logo' class='logo'>
+					<ul class='main-nav'>
+						<li><a href='#'>Food Delivery</a></li>
+						<li><a href='#'>How it Works</a></li>
+						<li><a href='#'>Our Cities</a></li>
+						<li><a href='#'>Sign Up</a></li>
+						
+					</ul>
+				
+				</div>
+			</nav>
+			<div class='hero-text-box row'>
+				<h1>Page Two</h1>
+				<a class='btn btn-full' href='#'>I’m hungry</a>
+				<a class='btn btn-ghost' href='#'>Show me more</a>
+			</div>
+		
+		</header>
+		
+		<section class='section-features'>
+			<div class='row'>
+				<h2>Get food fast &mdash; not fast food</h2>
+				<p class='long-copy'>
+				Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+				</p>
+			</div>
+			
+			<div class='row'>
+				<div class='col span-1-of-4'>
+					<ion-icon name="infinite"></ion-icon>
+					<h3>Up to 365 days/year</h3>
+					<p>
+						Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+					</p>
+				</div>
+				<div class='col span-1-of-4'>
+					<ion-icon name="hourglass"></ion-icon>
+					<h3>Ready in 20 minutes</h3>
+					<p>
+						You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+					</p>
+				</div>
+				<div class='col span-1-of-4'>
+					<ion-icon name="leaf"></ion-icon>
+					<h3>100% organic</h3>
+					<p>
+						All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+					</p>
+				</div>
+				<div class='col span-1-of-4'>
+					<ion-icon name="cart"></ion-icon>
+					<h3>Order anything</h3>
+					<p>
+						We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+						
+					</p>
+					
+				</div>
+			</div>
+		
+			<!-- 
+
+Up to 365 days/year
+
+Ready in 20 minutes
+
+100% organic
+
+Order anything
 -->
 
+		</section>
+		
+		
+	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Teko&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>page two</h1>
-			<hr>
-            <p>text</p>
-        </header>
-
-    </body>
+	</body>
 </html>
+
+
+<!-- Notes:
+1. fluid grid
+all layout elements are sized in relative units, such as percentages, instead of abolute units like pixels
+
+2. flexible images
+sized with relative units
+
+3. media queries
+allow us to specify different CSS style rules for different browser widths
+
+
+
+
+-->
