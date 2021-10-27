@@ -1,16 +1,29 @@
 /* BASIC SETUP ------------------------------------------------- */
 
+/* colors:
+222437 - space blue
+C1CDD3 - moon grey
+59946A - land green
+394B3E - shade green
+4E649B - ocean blue
+3A4560 - ocean shade
+
+
+*/
+
 * {
 	margin: 0;
+	margin-bottom: 10px;
 	padding: 0;
 	box-sizing: border-box;
+	/*border: 1px dashed;*/
 }
 
 html {
-    background-color: #ffffff;
-	color: #eee;
+    background-color: #222437;
+	color: #C1CDD3;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 100;
 	text-rendering: optimizeLegibility;
 }
@@ -26,20 +39,10 @@ h2 {
 }
 
 h1 {
-	font-size: 500%;
-	margin-top: 0px;
-	margin-bottom: 30px;
+	font-size: 300%;
 	word-spacing: 4px;
-	line-height: .7;
+	line-height: 1;
 }
-
-h2 {
-	font-size: 250%;
-	word-spacing: 2px;
-	text-align: center;
-	margin-bottom: 30px;
-}
-
 
 p {
 	font-size: 20;
@@ -47,79 +50,80 @@ p {
 }
 
 .row {
-	max-width: 900px;
+	max-width: 600px;
 	/* with 4 parameters: top right bottom left, with 2: top/bottom, left/right */ 
-	margin: 0 auto;
-}
-
-section {
-	padding: 80px 0;
+	margin: 0 auto; /* centers the row on the page */
+	margin-bottom: 20px;
 }
 
 /* BUTTONS */
 
+.btn,
 .btn:link,
 .btn:visited{
 	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
 	text-decoration: none;
-	color: #123456;
+	color: #394B3E;
+	background-color: #59946A;
 	border-radius: 7px;
-	border: 2px solid #123456;
+	border: 2px solid #394B3E;
 	/* the transition parameter selects another parameter to affect, and the time it will take to affect it */
 	transition: 
-		background-color 0.5s, 
-		border 0.5s, 
-		color 0.5s,
-		padding 0.5s;
+		background-color 0.3s, 
+		border 0.3s, 
+		color 0.3s,
+		padding 0.3s;
 }
 
 .btn:hover,
 .btn:active {
-	background-color: #123456;
-	border: 2px solid #123456;
-	color: #fff;
-	padding: 10px 60px;
+	background-color: #394B3E;
+	/*border: 2px solid #59946A;*/
+	color: #59946A;
 }
 
 /* HEADER -----------------------------------------*/
 
 header {
-	background-size: cover;
-	background-image: url(https://solarsystem.nasa.gov/system/resources/detail_files/536_PIA23645_PaleBlueDotRevisited_1600.jpg);
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+	height: 100px;
 }
-
-.title-box {
-	padding-top: 70px;
-	/*center the element (this is anchored to the top left corner) */
-	
-}
-
-.quote {
-	line-height: 1.5;
-}
-
-/* -------- HEADINGS -------- 
-
-
 
 .logo {
-	height: 100px;
-	width: auto;
 	float: left;
-	margin-top: 20px;
+	height: 100%;
+}
+
+.logo img {
+	height: 100%;
+	padding: 10%;
+}
+
+.logo h1 {
+	margin: 30px 10px;
 }
 
 .main-nav {
 	float: right;
-	list-style: none; /* removes bullets 
+	list-style: none; /* removes bullets */
 	margin-top: 55px;
 }
 
+blockquote {
+	margin: 0 80px;
+	text-align: justify;
+	background-color: #3A4560;
+	padding: 30px;
+	padding-bottom: 50px;
+	border-radius: 30px;
+}
+cite {
+	margin-left: 75px;
+	float: right;
+ }
+
+ /*
 .main-nav li { /* selects all li items within the class 
 	display: inline-block;
 	margin-left: 40px;

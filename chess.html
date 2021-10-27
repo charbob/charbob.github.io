@@ -1,34 +1,29 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Chess Move Name Generator</title>
-  <meta name="description" content="Chess Move Name Generator">
-  <meta name="author" content="Farewell Earth">
-
-  <meta property="og:title" content="Chess Move Name Generator">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.farewell.earth/chess/">
-  <meta property="og:description" content="Chess Move Name Generator">
-  <meta property="og:image" content="image.png">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-</head>
-
-<body>
-  <h1>Chess Move Generator</h1>
-  <p>Click Generate to improve your Chess strategy!</p>
-  <button class="generate" onclick="generate_move()">Generate</button>
-  <br><br>
-  <h3 class="move-name"></h3>
-  <script src="js/script.js"></script>
-</body>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Teko&display=swap" rel="stylesheet">
+		<title>Farewell Earth - Chess</title>
+		<link rel="shortcut icon" type="image/jpg" href="favicon/Round.png"/>
+	</head>
+	<body>
+		<header class="row">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo-round-alpha.png">
+				</a>
+			</div>
+			<div class="logo">
+				<h1>Farewell Earth</h1>
+			</div>
+		</header>
+		<section class="row">
+			<h2>Chess Move Generator</h2>
+			<p>Click Generate to improve your Chess strategy!</p>
+			<button class="btn" onclick="generate_move()">Generate</button>
+			<p class="move-name"></p>
+		</section>
+		
+		<script src="js/chess.js"></script>
+	</body>
 </html>
