@@ -162,9 +162,9 @@ const third_words = [
 ]
 
 function generate_move() {
-    const word1 = first_words[Math.floor(Math.random() * first_words.length)];
-    const word2 = second_words[Math.floor(Math.random() * second_words.length)];
-    const word3 = third_words[Math.floor(Math.random() * third_words.length)];
+    const word1 = adj1[Math.floor(Math.random() * adj1.length)];
+    const word2 = noun1[Math.floor(Math.random() * noun1.length)];
+    const word3 = noun2[Math.floor(Math.random() * noun2.length)];
     
     
     move_name.innerHTML = word1 + ' ' + word2 + ' ' + word3;

@@ -12,7 +12,7 @@ C1CDD3 - moon grey
 */
 
 * {
-	margin: 0;
+	margin: 20;
 	margin-bottom: 10px;
 	padding: 0;
 	box-sizing: border-box;
@@ -22,7 +22,7 @@ C1CDD3 - moon grey
 html {
     background-color: #222437;
 	color: #C1CDD3;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Archivo', sans-serif;
 	font-size: 15px;
 	font-weight: 100;
 	text-rendering: optimizeLegibility;
@@ -34,8 +34,8 @@ html {
 
 h1,
 h2 {
-	font-family: 'Teko', sans-serif;	
-	letter-spacing: 1px;
+	font-family: 'Archivo', sans-serif;	
+	letter-spacing: -0.5px;
 }
 
 h1 {
