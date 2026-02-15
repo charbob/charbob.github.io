@@ -63,7 +63,14 @@ const first_words = [
     "Royal",
     "Swiss",
     "Wrong",
-    "Correct"
+    "Correct",
+    "First-Rank",
+    "Third-Rank",
+    "Split-File",
+    "Updated",
+    "Revised",
+    "New",
+    "Plebian"
 ]
 const second_words = [
     "Double",
@@ -161,11 +168,14 @@ const third_words = [
     "Delay"
 ]
 
+function select_from_list(list) {
+    return list[Math.floor(Math.random() * list.length)]
+}
+
 function generate_move() {
-    const word1 = adjectives[Math.floor(Math.random() * adjectives.length)];
-    const word2 = noun1[Math.floor(Math.random() * noun1.length)];
-    const word3 = noun2[Math.floor(Math.random() * noun2.length)];
-    
+    const word1 = select_from_list(first_words);
+    const word2 = select_from_list(second_words);
+    const word3 = select_from_list(third_words);
     
     move_name.innerHTML = word1 + ' ' + word2 + ' ' + word3;
 }
