@@ -162,7 +162,7 @@ const third_words = [
 ]
 
 function generate_move() {
-    const word1 = adj1[Math.floor(Math.random() * adj1.length)];
+    const word1 = adjectives[Math.floor(Math.random() * adjectives.length)];
     const word2 = noun1[Math.floor(Math.random() * noun1.length)];
     const word3 = noun2[Math.floor(Math.random() * noun2.length)];
     
